@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: auto;
+        }
+
+        .wrapper{
+            height: 200px;
+            width: 1089px;
+            background-color: yellow;
+        }
+
+        nav{
+            height: 50px;
+            width: 1089px;
+            background-color: rgb(7, 73, 10);
+        }
+
+        .menu li{
+            height: 50px;
+            width: 217.5px;
+            background-color: rgb(116, 26, 201);
+            float: left;
+            line-height: 50px;
+            list-style-type: none;
+            text-indent: 20px;
+        }
+
+        a{
+            color: brown;
+            font-weight: bold;
+            font-size: larger;
+            text-decoration:none ;
+        }
+
+        .menu li:hover{
+            background-color: red;
+        }
+
+        li:hover>a{
+            color: darkgrey;
+        }
+
+        .menu li .submenu{
+            display: block;
+        }
+
+        .menu li:hover>.submenu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="">menu 1</a></li>
+                <li><a href="">menu 2</a></li>
+                <li><a href="">menu 3</a>
+                    <ul class="submenu">
+                        <li><a href="">menu 3.1</a></li>
+                        <li><a href="">menu 3.2</a></li>
+                        <li><a href="">menu 3.3</a></li>
+                    </ul>
+                </li>
+                <li><a href="">menu 4</a></li>
+                <li><a href="">menu 5</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
